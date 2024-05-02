@@ -109,12 +109,8 @@ button:hover{
     max-width: 300px;
 }
 
-.attrebure{
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-    font-size: 12px;
-}
+
+
 
 @media screen and (max-width: 1075px) {
     .content{
