@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Departure-mono";
+    src: url(../fonts/DepartureMono/DepartureMono-Regular.woff2) format("woff2");
+}
+
+:root{
+    background-color: rgb(187, 187, 187);
+    color: #333333;
+}
+
+html,body{
+    margin: 0;
+    font-family: 'departure-mono';
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+header{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+header a{
+    transition: all ease-in;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+#title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.peripherals{
+    margin-top: 20px;
+}
+
+.peripherals h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.peripherals li{
+    margin-top: 20px;
+    margin-left: 120px;
+    list-style: circle;
+}
+
+.computers{
+    margin-top: 20px;
+}
+
+.computers h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.computers li{
+    margin-top: 20px;
+    margin-left: 120px;
+    list-style: circle;
+}
+
+footer{
+    height: 40px;
+    margin-top: 120px;
+    background: #333333;
+    color: aliceblue;
+    text-align: center;
+}

@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Departure-mono";
+    src: url(../fonts/DepartureMono/DepartureMono-Regular.woff2) format("woff2");
+}
+
+:root{
+    background-color: rgb(187, 187, 187);
+    color: #333333;
+}
+
+html,body{
+    margin: 0;
+    font-family: "departure-mono";
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+header{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+header a{
+    transition: all ease-in;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+#title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    display: flex;
+    align-self: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 390px;
+    height: 80px;
+}
+
+.description p{
+    margin-left: 10px;
+}
+
+.proyects{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.game{
+    margin-top: 55px;
+}
+
+.proyects img{
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: all 400ms ease-in;
+}
+
+.proyects img:hover{
+    transform: translateY(-3%);
+}
+
+.proyects h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.proyects p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.click{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.click button{
+    border: 0;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    background-color: #333333;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 400ms ease-in;
+    font-family: 'departure-mono';
+}
+
+.click button:hover{
+    background-color: #1f1f1f;
+    
+}
+
+#secret{
+    text-align: center;    
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    justify-content: center;
+    align-self: center;
+}
+
+footer{
+    height: 40px;
+    margin-top: 120px;
+    background: #333333;
+    color: aliceblue;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
