@@ -1,0 +1,573 @@
+@font-face {
+    font-family: 'Departure-mono';
+    src: url(../public/fonts/DepartureMono/DepartureMono-Regular.woff2) format("woff2");
+}
+
+.hide{
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    z-index: 10; 
+}
+
+:root{
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    font-family: 'departure-mono';
+}
+
+/* Loading Screen */
+#loading-screen {  
+    font-family: 'departure-mono';
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;
+}
+
+.loading { 
+    max-width: 50%;  
+    line-height: 1.4;  
+    font-size: 1.2rem;  
+    font-weight: bold;  
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.loading__anim {  
+    width: 35px;  
+    height: 35px;  
+    display: inline-block;  
+    border-radius: 50%;
+    border: 5px solid rgba(189,189,189 ,0.25);  
+    border-left-color: rgba(3,155,229 ,1);  
+    border-top-color: rgba(3,155,229 ,1);  
+    animation: rotate 600ms infinite linear;
+    margin-left: 10px; 
+}
+
+@keyframes rotate {
+    to { transform: rotate(1turn); }
+}
+
+/* Main Container */
+#main-container{
+    flex-direction: column;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    color: #cacaca;
+    font-family: 'departure-mono';
+}
+
+#intro{
+    text-align: center;
+    margin-top: 120px;
+}
+
+#main-container img{
+    height: 20px;
+    width: auto;
+}
+
+#menu-links {
+    z-index: 1;
+    position: absolute; 
+    display: none; 
+    margin-top: 5px; 
+}
+
+#links-header ul li {
+    list-style: none;
+}
+
+#links-header button{
+    margin-top: 10px;
+    margin-left: 0px;
+    border: 1px solid #242424;
+    transition: all 300ms ease-in;
+}
+
+#links-header button:hover{
+    background-color: #7c7c7c;
+}
+
+/* Phrases container */
+#phraseSquare {
+    width: 500px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #fff;
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#phraseButton {
+    background-color: transparent;
+    border: 0;
+    margin-top: 0;
+}
+
+/* Links Buttons  */
+#links{
+    margin-top: 50px;
+}
+
+#links button{
+    width: 120px;
+    height: 40px;
+    transition: all 200ms ease-in;
+}
+
+#links button:hover{
+    background-color: #7c7c7c;
+}
+
+/* About me */
+#about-me{
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    text-align: center;
+}
+
+#about-me h3, img{
+    margin-left: 5px;
+}
+
+#about-me img{
+    height: 40px;
+}
+
+#terminal{
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #494b52;
+    width: 800px;
+    height: 500px;
+    margin-left: 550px;
+}
+
+/* Proyects */
+#proyects{
+    margin-top: 140px;
+    text-align: center;
+}
+
+#proyects button{
+    width: 120px;
+    height: 40px;
+    transition: all 200ms ease-in;
+}
+
+#proyects button:hover{
+    background-color: #7c7c7c;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 370px ) and (max-width: 750px) {
+
+html, body{
+    overflow: hidden;
+}
+    
+:root{
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    font-family: 'departure-mono';
+}
+
+/* Loading Screen */
+#loading-screen {  
+    font-family: 'departure-mono';
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;
+}
+
+.loading { 
+    max-width: 50%;  
+    line-height: 1.4;  
+    font-size: 1.2rem;  
+    font-weight: bold;  
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.loading__anim {  
+    width: 35px;  
+    height: 35px;  
+    display: inline-block;  
+    border-radius: 50%;
+    border: 5px solid rgba(189,189,189 ,0.25);  
+    border-left-color: rgba(3,155,229 ,1);  
+    border-top-color: rgba(3,155,229 ,1);  
+    animation: rotate 600ms infinite linear;
+    margin-left: 10px; 
+}
+
+@keyframes rotate {
+    to { transform: rotate(1turn); }
+}
+
+/* Main Container */
+#main-container{
+    flex-direction: column;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    color: #cacaca;
+    font-family: 'departure-mono';
+}
+
+#intro{
+    text-align: center;
+    margin-top: 120px;
+    font-size: medium;
+}
+
+#main-container img{
+    height: 20px;
+    width: auto;
+}
+
+#links-header button{
+    margin-top: 10px;
+    margin-left: 0px;
+    border: 1px solid #242424;
+    transition: all 400ms ease-in;
+}
+
+#links-header button:hover{
+    background-color: #4566be;
+}
+
+/* Phrases container */
+#phraseSquare {
+    width: 300px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #fff;
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#phraseButton {
+    background-color: transparent;
+    border: 0;
+    margin-top: 0;
+}
+
+/* Links Buttons  */
+#links{
+    margin-top: 50px;
+}
+
+#links button{
+    width: 120px;
+    height: 40px;
+    transition: all 200ms ease-in;
+}
+
+#links button:hover{
+    background-color: #7c7c7c;
+}
+
+/* About me */
+#about-me{
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#about-me h3, img{
+    margin-left: 5px;
+}
+
+#about-me img{
+    height: 40px;
+}
+
+#terminal{
+    border: 1px solid #000;
+    background-color: #494b52;
+    width: 300px;
+    height: 600px;
+    margin-left: 50px;
+}
+
+/* Proyects */
+#proyects{
+    margin-top: 140px;
+    text-align: center;
+}
+
+#proyects button{
+    width: 120px;
+    height: 40px;
+    transition: all 200ms ease-in;
+}
+
+#proyects button:hover{
+    background-color: #7c7c7c;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+}
+
+@media screen and (min-width: 766 ) and (max-width: 1500){
+    @font-face {
+        font-family: 'Departure-mono';
+        src: url(../public/fonts/DepartureMono/DepartureMono-Regular.woff2) format("woff2");
+    }
+    
+    .hide{
+        display: none;
+    }
+    
+    .fixed {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%; 
+        z-index: 10; 
+    }
+    
+    :root{
+        --color: rgba(114, 114, 114, 0.3);
+        background-color: #191a1a;
+        background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+        background-size: 55px 55px;
+        font-family: 'departure-mono';
+    }
+    
+    /* Loading Screen */
+    #loading-screen {  
+        font-family: 'departure-mono';
+        display: flex; 
+        justify-content: center;  
+        align-items: center;  
+        min-height: 100vh;
+    }
+    
+    .loading { 
+        max-width: 50%;  
+        line-height: 1.4;  
+        font-size: 1.2rem;  
+        font-weight: bold;  
+        text-align: center;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+    }
+    
+    .loading__anim {  
+        width: 35px;  
+        height: 35px;  
+        display: inline-block;  
+        border-radius: 50%;
+        border: 5px solid rgba(189,189,189 ,0.25);  
+        border-left-color: rgba(3,155,229 ,1);  
+        border-top-color: rgba(3,155,229 ,1);  
+        animation: rotate 600ms infinite linear;
+        margin-left: 10px; 
+    }
+    
+    @keyframes rotate {
+        to { transform: rotate(1turn); }
+    }
+    
+    /* Main Container */
+    #main-container{
+        flex-direction: column;
+        --color: rgba(114, 114, 114, 0.3);
+        background-color: #191a1a;
+        background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+        background-size: 55px 55px;
+        color: #cacaca;
+        font-family: 'departure-mono';
+    }
+    
+    #intro{
+        text-align: center;
+        margin-top: 120px;
+    }
+    
+    #main-container img{
+        height: 20px;
+        width: auto;
+    }
+    
+    #menu-links {
+        z-index: 1;
+        position: absolute; 
+        display: none; 
+        margin-top: 5px; 
+    }
+    
+    #links-header ul li {
+        list-style: none;
+    }
+    
+    #links-header button{
+        margin-top: 10px;
+        margin-left: 0px;
+        border: 1px solid #242424;
+        transition: all 300ms ease-in;
+    }
+    
+    #links-header button:hover{
+        background-color: #7c7c7c;
+    }
+    
+    /* Phrases container */
+    #phraseSquare {
+        width: 500px;
+        height: 100px;
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+        margin-top: 40px;
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    #button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #phraseButton {
+        background-color: transparent;
+        border: 0;
+        margin-top: 0;
+    }
+    
+    /* Links Buttons  */
+    #links{
+        margin-top: 50px;
+    }
+    
+    #links button{
+        width: 120px;
+        height: 40px;
+        transition: all 200ms ease-in;
+    }
+    
+    #links button:hover{
+        background-color: #7c7c7c;
+    }
+    
+    /* About me */
+    #about-me{
+        align-items: center;
+        justify-content: center;
+        margin-top: 140px;
+        text-align: center;
+    }
+    
+    #about-me h3, img{
+        margin-left: 5px;
+    }
+    
+    #about-me img{
+        height: 40px;
+    }
+    
+    #terminal{
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: #494b52;
+        width: 800px;
+        height: 500px;
+        margin-left: 50px;
+    }
+    
+    /* Proyects */
+    #proyects{
+        margin-top: 140px;
+        text-align: center;
+    }
+    
+    #proyects button{
+        width: 120px;
+        height: 40px;
+        transition: all 200ms ease-in;
+    }
+    
+    #proyects button:hover{
+        background-color: #7c7c7c;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
