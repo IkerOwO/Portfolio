@@ -37,6 +37,31 @@ document.getElementById('menu-btn').addEventListener('click', function() {
     }
 });
 
+const aboutMe = document.getElementById('about-me');
+const intro = document.getElementById('intro');
+const proyects = document.getElementById('proyects');
+
+function showSection(section) {
+    // Ocultá todo
+    [aboutMe, intro, proyects].forEach(div => div.classList.add('hide'));
+
+    // Mostrá solo la sección deseada
+    section.classList.remove('hide');
+}
+
+document.getElementById('home-btn').addEventListener('click', () => {
+    showSection(intro);
+});
+
+document.getElementById('about-me-btn').addEventListener('click', () => {
+    showSection(aboutMe);
+});
+
+document.getElementById('proyects-btn').addEventListener('click', () => {
+    showSection(proyects);
+});
+
+/*
 //About me Button
 document.getElementById('about-me-btn').addEventListener('click', () => {
     document.getElementById('about-me').classList.remove('hide');
@@ -58,4 +83,4 @@ document.getElementById('proyects-btn').addEventListener('click', () => {
     document.getElementById('proyects').classList.remove('hide');
 });
 
-
+*/

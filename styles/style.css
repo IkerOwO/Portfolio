@@ -4,8 +4,10 @@
 }
 
 .hide{
-    display: none;
+    display: none !important;
+    pointer-events: none;
 }
+
 
 .fixed {
     position: fixed;
@@ -83,11 +85,16 @@
     width: auto;
 }
 
+/* Links */
 #menu-links {
-    z-index: 1;
-    position: absolute; 
-    display: none; 
-    margin-top: 5px; 
+    position: absolute;
+    display: none;
+    top: 100%;
+    margin-top: 5px;
+}
+
+#links-header {
+    z-index: 10000;
 }
 
 #links-header ul li {
@@ -149,14 +156,17 @@
 
 /* About me */
 #about-me{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 140px;
+    margin-top: 0px;
     text-align: center;
 }
 
 #about-me h3, img{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 #about-me img{
@@ -167,9 +177,9 @@
     border: 1px solid #000;
     border-radius: 10px;
     background-color: #494b52;
-    width: 800px;
-    height: 500px;
-    margin-left: 550px;
+    width: 900px;
+    height: 700px;
+    margin-left: 0px;
 }
 
 /* Proyects */

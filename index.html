@@ -18,7 +18,7 @@
         }
     </style>
     <!-- Loading Screen -->
-    <div id="loading-screen" style="background-color: rgb(31, 31, 121);">
+    <div id="loading-screen" style="background-color: rgb(49, 49, 75);">
         <section class="loading">
             <span style="color: rgb(255, 255, 255);">Loading</span>
             <span class="loading__anim"></span>
@@ -27,9 +27,9 @@
     <!-- Portfolio -->
     <div id="main-container">
         <!-- Links-Menu -->
-        <div id="links-header" style="float: left;">
+        <div id="links-header" style="position: relative; float: left;">
             <button style="border-radius: 10px;" id="menu-btn"><img draggable="false" src="public/img/menu.png" style="margin-right: 0; margin-left: 0; margin-top: 0;" alt=""></button>
-            <div id="menu-links" style="z-index: 1; position: static; display: none; margin-top: 5px;">
+            <div id="menu-links" style="z-index: 9999; position: absolute; display: none; margin-top: 5px;">
                 <ul>
                     <li><button id="home-btn">Home</button></li>
                     <li><button id="about-me-btn">About Me</button></li>
@@ -58,35 +58,42 @@
             <h2 style="text-decoration: underline; font-size: xx-large;">About <span style="color: rgb(132, 0, 255);">Me</span></h2>
                 <!-- Terminal -->
                 <div id="terminal" style="text-align: start;">
-                    <p>iker@<span style="color: blue;">archlinux</span>:~$ ./about-me</p>
-                <p style="margin-left: 5px;">I'm a CS student that learned everything that is related to <span style="color: rgb(255, 167, 3);">linux</span> <br> and programming languages by myself, only by reading and practicing a lot</p>
+                    <p>iker@<span style="color: rgb(184, 109, 255);">archlinux</span>:~$ ./about-me</p>
+                <p style="margin-left: 5px;">I'm Currently studying a <span style="color: rgb(99, 255, 99);">VET</span> <br> I've studied verything that is related to <span style="color: rgb(255, 167, 3);">linux</span> <br> and <span style="color: rgb(115, 115, 253);">programming languages</span> by myself, only by reading and practicing a lot</p>
                 <h3>Langs</h3>
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="">
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="">
-                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg" alt="">
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <h3>Frameworks</h3>
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg" alt="">
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+          
+                <h3>Databases</h3>
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
                 <h3 style="margin-top: 10px;">IDEs</h3>
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+                <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg" />
                 <h3 style="margin-top: 10px;">OS</h3>
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" />
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fedora/fedora-original.svg" />
                 <img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg" />
                 <h3 style="margin-top: 10px;">Terminal</h3>
-                <img draggable="false" src="https://sw.kovidgoyal.net/kitty/_static/kitty.svg" alt="">
-                <img draggable="false" src="https://avatars.githubusercontent.com/u/63008829?s=200&v=4" alt="">
-                <img draggable="false" src="https://konsole.kde.org/assets/img/app_icon.png" alt="">
+                <img draggable="false" src="https://sw.kovidgoyal.net/kitty/_static/kitty.svg" alt=""> <span>+</span><img draggable="false" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ohmyzsh/ohmyzsh-original.svg" />
             </div>
-            <!-- End Terminal -->
         </div>
+        <!-- End Terminal | About me -->
+
         <!-- Proyects -->
          <div id="proyects" class="hide fixed">
             <h2 style="text-decoration: underline; font-size: xx-large;">Proyects</h2>
             <p style="margin-top: 20px;">Here are some of my proyects</p>
-           <a href="https://github.com/IkerOwO/Music-Web-App" target="_blank"> <button>Music App</a></button>
-            <a href="https://github.com/IkerOwO/Notas-Flash" target="_blank"><button>Notes App</button></a>
+           <a href="https://github.com/IkerOwO/IkerFetch" target="_blank"> <button>IkerFetch</a></button>
+            <a href="https://github.com/IkerOwO/Notas-Flash" target="_blank"><button>Notas</button></a>
            <a href="https://github.com/IkerOwO/password-generator" target="_blank"> <button>Pass-Gen</a></button>
             <p style="margin-top: 30px;">There are more on my <a href="https://github.com/IkerOwO" target="_blank" style="color: rgb(116, 116, 116); text-decoration: underline;">Github</a> Profile</p>
             <img draggable="false" style="height: 60px;" src="https://media.tenor.com/WrOlPBLlU9wAAAAM/anime-rikka-finger-spin.gif" alt="">
