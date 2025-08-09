@@ -14,7 +14,7 @@ window.onload = function() {
 
 // Frases
 const phrases = [
-    "The first thing that I developed was a mothers'day web",
+    "The first thing that I developed was a mother's day web",
     "My favourite languages are C++ and Rust!",
     "I don't like PHP"
 ];
@@ -82,5 +82,6 @@ document.getElementById('proyects-btn').addEventListener('click', () => {
     document.getElementById('intro').classList.add('hide');
     document.getElementById('proyects').classList.remove('hide');
 });
+
 
 */
