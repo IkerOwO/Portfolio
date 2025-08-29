@@ -16,6 +16,8 @@ window.onload = function() {
 const phrases = [
     "The first thing that I developed was a mother's day web",
     "My favourite languages are Java and C++",
+    "I have a Cambridge B2 in English ",
+    "I always study by books and by practicing a lot",
     "I don't like PHP"
 ];
 
@@ -85,4 +87,5 @@ document.getElementById('proyects-btn').addEventListener('click', () => {
 
 
 */
+
 
