@@ -14,78 +14,42 @@ window.onload = function() {
 
 // Frases
 const phrases = [
-    "The first thing that I developed was a mother's day web",
-    "My favourite languages are Java and C++",
-    "I have a Cambridge B2 in English ",
-    "I always study by books and by practicing a lot"
+    "I'm a guitarist btw",
+    "The first thing that I developed was a mothers'day web",
+    "My favourite languages are C++ and Java!",
+    "I don't like PHP"
 ];
+let indice = 0; // Para saber qué frase mostrar
 
-let currentPhraseIndex = 0;
+const mensaje = document.getElementById('bot-message');
+const boton = document.getElementById('bot-btn');
 
-document.getElementById('phraseButton').addEventListener('click', function() {
-    document.getElementById('phraseSquare').innerText = phrases[currentPhraseIndex];
-    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+boton.addEventListener('click', () => {
+    mensaje.textContent = phrases[indice]; // Mostrar frase
+    indice++; // Pasar a la siguiente frase
+    if(indice >= phrases.length) indice = 0; // Reiniciar al final
 });
 
-
-// Boton list
-document.getElementById('menu-btn').addEventListener('click', function() { 
-    const menuLinks = document.getElementById('menu-links');
-    if (menuLinks.style.display === 'block' ) {
-        menuLinks.style.display = 'none'; 
-    } else {
-        menuLinks.style.display = 'block'; 
+document.addEventListener('DOMContentLoaded', () => {
+    // Secciones (corregí 'intro' a 'info-section')
+    const sections = {
+        'info-section': document.getElementById('info-section'),  // Cambié 'intro' por 'info-section'
+        'about-me': document.getElementById('about-me'),
+        projects: document.getElementById('projects')
+    };
+    function showSection(section) {
+        Object.values(sections).forEach(sec => sec.classList.add('hide'));
+        section.classList.remove('hide');
     }
+    // Navbar links
+    document.querySelectorAll('.btn-section').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = link.dataset.target;
+            showSection(sections[target]);
+            // Activar clase active
+            document.querySelectorAll('.btn-section').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
 });
-
-const aboutMe = document.getElementById('about-me');
-const intro = document.getElementById('intro');
-const proyects = document.getElementById('proyects');
-
-function showSection(section) {
-    // Ocultá todo
-    [aboutMe, intro, proyects].forEach(div => div.classList.add('hide'));
-
-    // Mostrá solo la sección deseada
-    section.classList.remove('hide');
-}
-
-document.getElementById('home-btn').addEventListener('click', () => {
-    showSection(intro);
-});
-
-document.getElementById('about-me-btn').addEventListener('click', () => {
-    showSection(aboutMe);
-});
-
-document.getElementById('proyects-btn').addEventListener('click', () => {
-    showSection(proyects);
-});
-
-/*
-//About me Button
-document.getElementById('about-me-btn').addEventListener('click', () => {
-    document.getElementById('about-me').classList.remove('hide');
-    document.getElementById('proyects').classList.add('hide');
-    document.getElementById('intro').classList.add('hide');
-});
-
-//Home button
-document.getElementById('home-btn').addEventListener('click', () => {
-    document.getElementById('about-me').classList.add('hide');
-    document.getElementById('proyects').classList.add('hide');
-    document.getElementById('intro').classList.remove('hide');
-});
-
-//Proyects button
-document.getElementById('proyects-btn').addEventListener('click', () => {
-    document.getElementById('about-me').classList.add('hide');
-    document.getElementById('intro').classList.add('hide');
-    document.getElementById('proyects').classList.remove('hide');
-});
-
-
-*/
-
-
-
