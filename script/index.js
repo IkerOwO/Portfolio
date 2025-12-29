@@ -16,8 +16,9 @@ window.onload = function() {
 const phrases = [
     "I'm a guitarist btw",
     "The first thing that I developed was a mothers'day web",
-    "My favourite languages are C++ and Java!",
-    "I don't like PHP"
+    "My favourite languages are Java and Python!",
+    "I don't like PHP",
+    "I love playing VR games"
 ];
 let indice = 0; // Para saber qué frase mostrar
 
@@ -52,4 +53,5 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
         });
     });
+
 });
